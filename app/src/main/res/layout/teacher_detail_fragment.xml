@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:thoth="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:background="@android:color/darker_gray"
+    />
+    
+    <LinearLayout
+        android:id="@+id/informations_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/header_imageview"
+        android:paddingTop="80dp"
+        android:paddingBottom="64dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Name"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/teacher_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#FF707070"
+            android:text="Teacher Email"
+            />
+
+    </LinearLayout>
+    <com.google.android.apps.iosched.ui.widget.BezelImageView
+        android:layout_width="@dimen/teacher_avatar_image_size"
+        android:layout_height="@dimen/teacher_avatar_image_size"
+        android:id="@+id/teacher_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_image_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/informations_container"
+        android:layout_marginBottom="-64dp"
+        thoth:maskDrawable="@drawable/circle_mask"
+        />
+</RelativeLayout>
