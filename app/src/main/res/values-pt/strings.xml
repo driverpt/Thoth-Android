@@ -11,7 +11,6 @@
     <string name="general_info">Informação Geral</string>
     <string name="empty_text">Não existem Dados</string>
     <string name="action_email">Enviar Email</string>
-    <string name="action_example">Acção de Exemplo</string>
     <string name="choose_email_client">Escolher o Cliente de Email</string>
     <string name="error_no_email_clients">Não existem Clientes de Email instalados neste dispositivo</string>
     <string name="participants">Participantes</string>
@@ -19,5 +18,4 @@
     <string name="search_hint">Nome do Professor</string>
     <string name="search_title">Procurar</string>
     <string name="summaries">Sumários</string>
-    <string name="title_drawer_open" translatable="false">Menu</string>
 </resources>
