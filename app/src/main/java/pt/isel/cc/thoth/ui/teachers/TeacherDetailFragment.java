@@ -90,7 +90,7 @@ public class TeacherDetailFragment extends LoadingFragment implements LoaderMana
         teacherName = (TextView) getContentContainer().findViewById(R.id.teacher_name);
         teacherEmail = (TextView) getContentContainer().findViewById(R.id.teacher_email);
 
-        getLoaderManager().initLoader(LOADER_TEACHER, getArguments(), this);
+        getLoaderManager().restartLoader(LOADER_TEACHER, getArguments(), this);
     }
 
     @Override
