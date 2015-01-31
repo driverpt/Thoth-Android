@@ -163,7 +163,7 @@ public class TeacherDetailFragment extends LoadingFragment implements LoaderMana
                 teacherEmail.setText(resultHolder.teacher.getAcademicEmail());
                 Bundle bundle = new Bundle();
                 bundle.putString(ARGUMENT_TEACHER_BITMAP_URL, resultHolder.teacher.getGravatarUrl() + "?s=" + getResources().getDimensionPixelSize(R.dimen.teacher_avatar_image_size));
-                getActivity().getSupportLoaderManager().initLoader(LOADER_BITMAP, bundle, this);
+                getActivity().getSupportLoaderManager().restartLoader(LOADER_BITMAP, bundle, this);
                 setContentLoading(false);
                 break;
             case (LOADER_BITMAP):
